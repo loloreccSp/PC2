@@ -30,7 +30,8 @@ namespace Homework
         public string name;
         public int entire_cost;
         public int penny_cost;
-        public Product(int entire, int pennies, string name, int entire_cost, int penny_cost) : base(entire, pennies)
+        public Product(int entire, int pennies, string name, int entire_cost, int penny_cost)
+            : base(entire, pennies)
         {
             this.entire = entire;
             this.pennies = pennies;
