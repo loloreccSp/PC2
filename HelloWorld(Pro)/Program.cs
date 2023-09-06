@@ -1,6 +1,4 @@
 ﻿
-using HelloWorld_Pro_;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using static Homework.Musical_instruments;
 
@@ -179,33 +177,40 @@ namespace Homework
             //}
 
             // Задание 3
-
-            Console.WriteLine("Enter number: ");
-            int num = Convert.ToInt32(Console.ReadLine());
-
-
-            DecimalNumber binary = new DecimalNumber(num);
-            binary.BinarySystem();
-
-            //int temp = num % 2;
-
-            //if (temp <= 1)
+            //try
             //{
-            //    for (int i = num; i <= num / 2; i++)
+            //    Console.WriteLine("Enter measurement system: binary - 1; octal - 2; hexadecimal - 3.");
+            //    int choice = Convert.ToInt32(Console.ReadLine());
+            //    Console.WriteLine("Enter number: ");
+            //    int num = Convert.ToInt32(Console.ReadLine());
+
+            //    switch (choice)
             //    {
-            //        num = num % 2;
+            //        case 1:
 
-            //        i = num / 2;
+            //            DecimalNumber binary = new DecimalNumber(num);
+            //            binary.BinarySystem();
+            //            break;
+            //        case 2:
 
-            //        Console.WriteLine(num);
+            //            DecimalNumber octal = new DecimalNumber(num);
+            //            octal.OctalSystem();
+            //            break;
+            //        case 3:
 
-            //        //i = (num / 2) % 2;
-            //        //for (int j = 0; j < i; j++)
-            //        //{
-            //        //    i = i % 2;
-            //        //    Console.WriteLine(i);
-            //        //}
+            //            DecimalNumber hexadecimal = new DecimalNumber(num);
+            //            hexadecimal.HexadecimalSystem();
+            //            break;
+
             //    }
+            //}
+            //catch (FormatException)
+            //{
+            //    Console.WriteLine("\nEnter only numbers!");
+            //}
+            //catch (Exception x)
+            //{
+            //    Console.WriteLine($"{x.Message}");
             //}
 
         }
